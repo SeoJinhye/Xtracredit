@@ -3,9 +3,9 @@ def OddOdd(value):
 	SumtoReturn = 0
 	for Values in value:
 		if (Toogle == True):
-			if(Values%2 == 0):
+			if(value.index(Values)%2 == 1):
 				SumtoReturn = SumtoReturn + Values
-	Toogle = False
+	Toogle = not Toogle
 	return SumtoReturn
 
-OddOdd([1,3,5,6,7,9])
+print(OddOdd([1,3,6,9]))
